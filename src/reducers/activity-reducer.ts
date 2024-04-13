@@ -21,14 +21,24 @@ export const ActivityReducer = (
 
     if(action.type === 'save-activity'){
         // Manela la lógica para actualizar el state
+        let updateActivities : Activity[] = []
+
+        if(state.activeId){
+            updateActivities = state.activities.map( activity => activity.id === state.activeId ? action.payload.newActivity : activity)
+        } else {
+           updateActivities =  [...state.activities, action.payload.newActivity]
+        }
+
         return {
             ...state,
-            activities: [...state.activities, action.payload.newActivity]
+            activities: updateActivities,
+            activeId: ''
         }
     }
 
     if(action.type === 'set-activeId'){
         return {
+        // Manela la lógica para editar el state
             ...state,
             activeId: action.payload.id
         }
