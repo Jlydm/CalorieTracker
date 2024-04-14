@@ -26,14 +26,10 @@ CalorieTracker es una aplicación web desarrollada con React, Vite, TypeScript y
   
 - **UUID:** Instalamos la biblioteca UUID para generar identificadores únicos más robustos en nuestra aplicación.
 
-¡Explora las funcionalidades y disfruta de esta aplicación web de seguimiento de calorías! Puedes acceder a la aplicación directamente [aquí](https://mycalorietracker.netlify.app/).
-
 ---
 
 ¡Explora las funcionalidades y disfruta de esta aplicación web de seguimiento de calorías!
 
 Puedes acceder a la aplicación directamente [aquí](https://mycalorietracker.netlify.app/).
-
-Recuerda que este proyecto es un resultado del aprendizaje y la aplicación de nuevas tecnologías y herramientas. ¡Sigue aprendiendo y mejorando tus habilidades!
 
 ---
