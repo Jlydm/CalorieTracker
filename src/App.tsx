@@ -1,12 +1,12 @@
-import { useReducer, useEffect, useMemo } from 'react'
+import { useEffect, useMemo } from 'react'
 import Form from "./components/Form"
-import { ActivityReducer, initialState } from './reducers/activity-reducer'
 import ActivityList from './components/ActivityList'
 import CalorieTracker from './components/CalorieTracker'
+import { useAcitivity } from './hooks/useActivity'
 
 function App() {
 
-  const [state, dispatch] = useReducer(ActivityReducer, initialState)
+  const { state, dispatch } = useAcitivity()
 
   // Creando el localStorage
   useEffect(() => {
